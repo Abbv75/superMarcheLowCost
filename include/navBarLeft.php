@@ -70,8 +70,8 @@
         <div id="collapseVente" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Actions</h6>
-                <a class="collapse-item" href="../utilities-color.html">Lister les ventes</a>
-                <a class="collapse-item" href="../utilities-border.html">Effectuer une vente</a>
+                <a class="collapse-item" href="listeVente.php">Lister les ventes</a>
+                <a class="collapse-item" href="ajouter_vente.php">Effectuer une vente</a>
             </div>
         </div>
     </li>
@@ -83,20 +83,6 @@
     <div class="sidebar-heading">
         Vue d'ensemble
     </div>
-
-    <?php
-    if ($currentUser['role'] == 'admin') {
-        ?>
-        <!-- Nav Item - Charts -->
-        <li class="nav-item">
-            <a class="nav-link" href="statistique.php">
-                <i class="fas fa-fw fa-chart-area"></i>
-                <span>Statistiques</span>
-            </a>
-        </li>
-        <?php
-    }
-    ?>
 
 
     <!-- Nav Item - Tables -->

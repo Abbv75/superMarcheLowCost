@@ -1,0 +1,295 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: blue;
+}
+
+a, button, .fa{
+    cursor: pointer;
+}
+
+select, input, button{
+    padding: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+header{
+    padding: 10px;
+    text-align: center;
+    background: linear-gradient( rgb(0, 55, 128), rgb(0, 183, 255));
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    padding: 10px;
+    border: 2px solid;
+    border-radius: 10px;
+    background: red;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.486);
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    border: 1px solid;
+}
+
+.ListeProduitZone{
+    /* width: 100%; */
+    overflow-x: scroll;
+}
+
+
+table th{
+    color: blue;
+}
+
+table td, table th{
+    border-bottom: 1px solid grey;
+    padding: 10px;
+}
+
+.main{
+    padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contenue{
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.contenue > *{
+    max-width: 100%;
+    height: fit-content;
+    min-width: 380px;
+    background: rgb(227, 249, 255);
+    padding: 10px;
+}
+
+.contenue h4{
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(179, 179, 179);
+}
+
+.partie1{
+    width: 100%;
+    box-shadow: initial;
+}
+
+.partie1 > *, .partie2 > .form2{
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.377);
+    padding: 20px 10px;
+    background: white;
+    margin: 20px; 
+}
+
+.form, .partie1 > div, .partie2, .partie2 > *{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form1 select, .form1 input, .btnZone button{
+    width: 100%;
+    max-width: 100%;
+}
+
+.inputZone{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.inputZone div{
+    width: 100%;
+}
+
+.inputZone div input{
+    width: calc(100% - 20px);
+}
+
+.btnZone{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.btnZone button{
+    color: white;
+}
+
+.btnValider{
+    min-width: 70%;
+    background: rgb(1, 104, 1);
+}
+
+.btnAnnuler{
+    background: rgb(139, 0, 0);
+}
+
+.actionZone div{
+    display: flex;
+    gap: 10px;
+}
+
+.actionZone .deleteBtn{
+    color: red;
+}
+
+.actionZone .deleteBtn:hover i{
+    animation: rotate-iphone .15s linear infinite;
+    cursor: pointer;
+}
+
+.form2 input{
+    width: 100%;
+} 
+
+.infoVenteZone{
+    padding: 20px;
+}
+
+.infoVente{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0 0 0;
+    border-top: 1px solid grey;
+}
+
+.infoVente .titre{
+    color: blue;
+    font-weight: bold;
+}
+
+.reductionCheck{
+    display: flex;
+    min-width: 40px;
+    max-width: 40px;
+    min-height: 40px;
+    max-height: 40px;
+    justify-content: center;
+    align-items: center;
+    background: green;
+    color: white;
+    border-radius: 8px;
+}
+
+.partie2 .typeVenteZone{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    padding-bottom: 0;
+}
+
+#validerBtnZone{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+#validerBtnZone .btnLoad > *{
+    display: none;
+}
+
+#validerBtnZone .btnLoad {
+    min-width: 50px;
+    min-height: 50px; 
+    max-width: 50px;
+    max-height: 50px;  
+    border: blue dashed;
+    border-radius: 50%;
+    animation: rotate3 3s linear infinite;
+    background: none;
+}
+
+.searchZone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchZone .searchBtn{
+    /* transform: translateX(-20px); */
+    margin-left: -20px;
+}
+
+@media only screen and (max-width: 800px) {
+    .contenue {
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .searchProduitZone{
+        display: block;
+    }
+
+    .searchProduitZone > *{
+        margin: 10px 0;
+    }
+}
+
+
+
+
+
+
+
+
+@keyframes rotate-iphone {
+    0%{
+        transform: scale(1.5) rotate(9deg);
+    }
+    50%{
+        transform: scale(1.5) rotate(-9deg);
+    }
+    100%{
+        transform: scale(1.5) rotate(9deg);
+    }
+}
+
+@keyframes rotate3 {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.buttonZone{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

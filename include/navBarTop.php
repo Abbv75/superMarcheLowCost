@@ -32,7 +32,7 @@
                 </h6>
 
                 <?php
-                $queryTop = $bdd->query("SELECT * FROM historique ORDER BY dateHistorique DESC");
+                $queryTop = $bdd->query("SELECT * FROM historique ORDER BY dateHistorique DESC LIMIT 3");
                 $existe = false;
                 while ($resTmp = $queryTop->fetch()) {
                     $existe = true;
